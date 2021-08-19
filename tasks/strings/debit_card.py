@@ -13,7 +13,7 @@ def hide_debit_numbers(card_number: str) -> str:
     :param card_number: номер карты 16 цифр
     :return: номер карты, вида 1111********1111
     """
-    result = None
+    result = card_number[:4] + "********" + card_number[12:]
     return result
 
 
@@ -22,3 +22,5 @@ if __name__ == '__main__':
     if len(c_numb) != 16 or not c_numb.isdigit():
         raise ValueError("Некорректный номер карты")
     print(hide_debit_numbers(c_numb))
+
+# W292 no newline at end of file
