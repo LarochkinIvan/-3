@@ -19,11 +19,11 @@ def multiply_str(user_string: str, n: str) -> str:
 
     :return: результирующая строка
     """
-    result = None
+    result = user_string * int(n)
     return result
 
 
 if __name__ == '__main__':
     string = input('Введите строку: ')
     numb = input('Сколько раз продублировать: ')
-    print(f'Склеенная строка: {multiply_str(string, numb)}')
+    print(f'Склеенная строка: {multiply_str(string,numb)}')

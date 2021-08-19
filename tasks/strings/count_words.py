@@ -22,10 +22,13 @@ def count_words(str_to_count: str) -> int:
 
     :return: количество слов в строке
     """
-    result = None
+    str_to_count.split(" ")
+    result = len(str_to_count.split(" "))
     return result
 
 
 if __name__ == '__main__':
     string = input('Введите строку для подсчета слов: ')
     print(f"Количество слов: {count_words(string)}")
+
+# W292 no newline at end of file
